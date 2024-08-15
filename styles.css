@@ -5,36 +5,35 @@ html {
 }
 
 .top {
-    display: inline;
-    border-left: 50%;
-}
-
-.logo {
     animation-name: logorot;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+}
+
+.logo {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  scale: 0.5;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    scale: 0.75;
 }
 
 .text {
     color: white;
-    font-family: sans-serif;
+    font-family: Archivo-Black, Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
+    font-size: xx-large;
 }
 
 @keyframes logorot {
     0% {
-        transform: translateY(50%);
+        transform: translateY(20%);
     }
     50% {
-        transform: translateY(45%);
+        transform: translateY(15%);
     }
     100% {
-        transform: translateY(50%);
+        transform: translateY(20%);
     }
 }
