@@ -1,11 +1,40 @@
+
+
 html {
     background-color: black;
 }
 
 .top {
-    border-radius: 90%;
+    display: inline;
+    border-left: 50%;
+}
+
+.logo {
+    animation-name: logorot;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  scale: 0.5;
 }
 
 .text {
-    color: white; 
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes logorot {
+    0% {
+        transform: translateY(50%);
+    }
+    50% {
+        transform: translateY(45%);
+    }
+    100% {
+        transform: translateY(50%);
+    }
 }
