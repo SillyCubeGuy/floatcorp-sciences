@@ -1,0 +1,21 @@
+
+
+html {
+    background-color: rgb(59, 59, 59);
+}
+
+a {
+    color: azure
+}
+
+.title {
+    color:azure;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+    scale: 1;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}

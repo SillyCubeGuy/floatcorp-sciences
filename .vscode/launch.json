@@ -7,8 +7,20 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
+            "name": "Open Carl's Page",
+            "file": "c:\\Users\\jon\\Documents\\GitHub\\floatcorp-sciences\\carl.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open Landing Page",
             "file": "c:\\Users\\jon\\Documents\\GitHub\\floatcorp-sciences\\index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open CLOUD CONTROLLER",
+            "file": "c:\\Users\\jon\\Documents\\GitHub\\floatcorp-sciences\\cloudcontroller.html"
         }
     ]
 }
