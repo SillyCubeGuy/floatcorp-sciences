@@ -1,0 +1,29 @@
+
+html {
+    background-color: rgb(153, 145, 68);
+}
+
+.title {
+    color: azure;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.shortertext {
+    width: 70%;
+}
+
+.dangerous {
+    color:red
+}
+
+
+.chip {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}

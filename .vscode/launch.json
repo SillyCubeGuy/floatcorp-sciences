@@ -21,6 +21,18 @@
             "request": "launch",
             "name": "Open CLOUD CONTROLLER",
             "file": "c:\\Users\\jon\\Documents\\GitHub\\floatcorp-sciences\\cloudcontroller.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open DYNAMICCAST",
+            "file": "c:\\Users\\jon\\Documents\\GitHub\\floatcorp-sciences\\dynamiccast.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open LURA PILLS",
+            "file": "c:\\Users\\jon\\Documents\\GitHub\\floatcorp-sciences\\lurapills.html"
         }
     ]
 }
