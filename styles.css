@@ -1,7 +1,24 @@
 
 
 html {
-    background-color: black;
+    background-color: rgb(59, 59, 59);
+}
+
+header {
+    position: fixed;
+    text-align: center;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+.email {
+    text-align: center;
+    color: azure;
+    border: auto;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: 10%;
+    display: block;
 }
 
 .top {
@@ -10,20 +27,90 @@ html {
     animation-iteration-count: infinite;
 }
 
+.cloud {
+    scale: 0.6;
+    display: absolute;
+    overflow: visible;
+}
+
 .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    scale: 0.75;
+    scale: 1;
+}
+
+.welcome {
+    color: white;
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    scale: 1.6;
 }
 
 .text {
     color: white;
-    font-family: Archivo-Black, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: xx-large;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    scale: 1;
+}
+
+.textalt {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    scale: 0.8;
+}
+
+.textdesc {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: medium;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    scale: 1;   
+    margin-bottom: 5%;
+}
+
+
+.projects {
+    display: grid;
+    grid-template-columns: 4 4;
+    grid-template-rows: repeat(2, min-content);
+    place-items: center;
+}
+
+a {
+    color: azure;
+    font-size: x-large;
+}
+
+.push {
+    border-bottom: 45%;
+}
+
+.MSTK {
+    color: rgb(59, 59, 59)
 }
 
 @keyframes logorot {
