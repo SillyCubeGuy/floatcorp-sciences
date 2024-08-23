@@ -1,21 +1,23 @@
 // definitions
-function manageLocalStorage(key, value, modify, log) {
-    switch (modify) {
-        case create:
-        localStorage.setItem(key, value);
-        if (log = true) {
-            console.log(localStorage.getItem(key))
-        }
-        break;
-        case remove:
-            localStorage.removeItem(key);
-        break;
-        default:
-        localStorage.setItem(key, value);
-        if (log = true) {
-            console.log(localStorage.getItem(key))
-        }
-        break;
+var songtoggle = false
+window.onmousemove = function() {
+    music = document.getElementById("bgm");
+}
+
+
+function bgmcheck() {
+    var music = document.getElementById("bgm");
+    var mbutton = document.getElementById("mbutton");
+    console.log(":>")
+    songtoggle = !songtoggle; // Toggles the value (true -> false or false -> true)
+    if (songtoggle) {
+        music.play().catch(error => {
+            console.log("(-_-') " + error);
+        });
+        mbutton.src = "Play2.svg";
+    } else {
+        music.pause();
+        mbutton.src = "NoPlay2.svg";
     }
 }
 

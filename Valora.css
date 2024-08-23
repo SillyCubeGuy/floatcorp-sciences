@@ -4,7 +4,11 @@
 }
 
 html {
-    background-color: rgb(81, 52, 33);
+    background-color: rgb(40, 53, 82);
+}
+
+a {
+    color: rgb(43, 0, 255)
 }
 
 img {
@@ -13,12 +17,8 @@ img {
     outline-width: 5px;
 }
 
-a {
-    color: rgb(255, 85, 0)
-}
-
 .title {
-    color:rgb(249, 147, 96);
+    color:rgb(103, 119, 176);
     font-family: vcr;
     font-weight: bold;
     text-align: center;

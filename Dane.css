@@ -4,7 +4,7 @@
 }
 
 html {
-    background-color: rgb(81, 52, 33);
+    background-color: rgb(68, 18, 18);
 }
 
 img {
@@ -14,11 +14,11 @@ img {
 }
 
 a {
-    color: rgb(255, 85, 0)
+    color: rgb(255, 0, 0)
 }
 
 .title {
-    color:rgb(249, 147, 96);
+    color:rgb(249, 96, 96);
     font-family: vcr;
     font-weight: bold;
     text-align: center;

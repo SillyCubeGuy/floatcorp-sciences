@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.png" type="image/png">
 <script src="script.js"></script>
 <meta lang="en" charset="UTF-8">
 <html>
-  <title>FLOATCORP</title>
-  <header>
+  <title>WELCOME TO FLOATCORP</title>
+  <header id="music">
+    <a onclick="bgmcheck()"><img class="boingable" id="mbutton" src="NoPlay2.svg"></a>
   </header>
+  <audio autoplay id="bgm">
+    <source src="teleVISION.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 <body>
   <div class="top">
   <img class="logo" src="FCS.png">
+  </div>
+  <div class="email">
+    <a>floatcorpsciences@gmail.com</a>
   </div>
   <div>
   <div class="text">
@@ -18,15 +27,37 @@
   <h2>FLOATCORP SCIENCES is a company that was started by <a href="carl.html">Carl Abonaust</a> in 1973 which strives to create new and never-before seen inventions before the new era. and along with that make them not as over-priced as the rest of the competition so that you can have the best for the lowest price!</h2>
   <h2>We started this company in 1973 and now in the spotlight since 1978. and are willing to keep our efforts high to ensure what we have promised from the start.</h2>
   <video class="intro" width="320" height="240" controls>
-    <source src="intromov.mp4">
+    <source id="vid" src="intromov.mp4">
   </div>
+</div>
+<div>
+  <div class="text">
+  <h1>MEET THE TEAM</h1>
+  </div>
+  <div style="display: grid; align-items: center; height: 5;"></div>
+  <div style="display: grid; grid-template-columns: repeat(4, minmax(250px, 1fr)); gap: 25px; text-align: center;">
+    <h1 class="nametext"><a href="carl.html">Carl Abonaust</a></h1>
+    <h1 class="nametext"><a href="Valora.html">Valora Lilana</a></h1>
+    <h1 class="nametext"><a href="Dane.html">Dane Honsen</a></h1>
+    <h1 class="nametext"><a href="Anala.html">Anala Kulan</a></h1>
+    </div>
+</div>
+<div>
+  <div style="display: flex; justify-content: center; align-items: center; height: 25vh;">
+  <div style="display: grid; grid-template-columns: repeat(4, minmax(250px, 1fr)); gap: 100px; place-items: center;">
+    <img src="IconC.png" alt="Image">
+    <img src="IconV.png" alt="Image">
+    <img src="IconD.png" alt="Image">
+    <img src="IconA.png" alt="Image">
+</div>
 </div>
   <div class="textalt">
   <h1>WHAT WE'VE DONE</h1>
-  <p>Everything here is what we have done before or are currently working on. come back soon to keep in check!</p>
+  <p>Everything here is what we have done before or are currently working on. come back soon to keep in check!
 </div>
 <div class="projects">
-  <aside class="image-wrapper">
+  <aside class="image-wrapper" style="scale: 0.8;">
+  <a href="index.html"><img src="mystery.png"></a>
   <a href="cloudcontroller.html"><img src="cloudcontroller.png"></a>
   <a href="lurapills.html"><img src="lurapills.png"></a>
   <a href="dynamiccast.html"><img src="dynamiccast.png"></a>
@@ -34,9 +65,6 @@
 </div>
 <div class="push">
   
-</div>
-<div class="email">
-  <a>floatcorpsciences@gmail.com</a>
 </div>
 </body>
 </html>

@@ -1,23 +1,27 @@
 
 
 html {
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(33, 33, 33) ;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    height: 100vh; /* Make sure body takes up full height */
+    margin: 0; /* Remove default margin */
 }
 
 header {
     position: fixed;
     text-align: center;
     color: aliceblue;
-    font-family: sans-serif;
+    font-family: vcr;
 }
 
 .email {
     text-align: center;
     color: azure;
-    border: auto;
-    font-family: sans-serif;
+    font-family: vcr;
     font-weight: 600;
-    margin-top: 10%;
     display: block;
     font-size: xx-large;
     scale: 1
@@ -39,6 +43,7 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5%;
     scale: 1;
 }
 
@@ -52,7 +57,7 @@ header {
 
 .welcome {
     color: white;
-    font-family:sans-serif;
+    font-family:vcr;
     font-weight: bold;
     text-align: center;
     font-size: xx-large;
@@ -64,7 +69,7 @@ header {
 
 .text {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: vcr;
     font-weight: bold;
     text-align: center;
     font-size: xx-large;
@@ -75,9 +80,27 @@ header {
     scale: 1;
 }
 
+.nametext {
+    font-family: vcr;
+    scale: 1.4;
+}
+
+.team {
+    color: white;
+    font-family: vcr;
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+    display:inline-table;
+    margin-left: auto;
+    margin-right: auto;
+    scale: 1
+    
+}
+
 .textalt {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: vcr;
     font-weight: bold;
     text-align: center;
     font-size: xx-large;
@@ -90,7 +113,7 @@ header {
 
 .textdesc {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: vcr;
     font-weight: bold;
     text-align: center;
     font-size: medium;
@@ -100,6 +123,11 @@ header {
     width: 40%;
     scale: 1;   
     margin-bottom: 5%;
+}
+
+@font-face {
+    font-family: vcr;
+    src: url(VCR_OSD_MONO_1.001.ttf);
 }
 
 
@@ -124,6 +152,18 @@ a {
 }
 
 @keyframes logorot {
+    0% {
+        transform: translateY(20%);
+    }
+    50% {
+        transform: translateY(15%);
+    }
+    100% {
+        transform: translateY(20%);
+    }
+}
+
+@keyframes carl {
     0% {
         transform: translateY(20%);
     }

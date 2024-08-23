@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: vcr;
+    src: url(VCR_OSD_MONO_1.001.ttf);
+}
+
 html {
     background-color: rgb(0, 94, 189);
 }
@@ -10,7 +15,7 @@ html {
     text-align: center;
     font-weight: bold;
     font-size: xx-large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: vcr;
 }
 
 
