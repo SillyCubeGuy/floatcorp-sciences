@@ -1,169 +1,284 @@
 
 
-html {
-    background-color: rgb(33, 33, 33) ;
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    height: 100vh; /* Make sure body takes up full height */
-    margin: 0; /* Remove default margin */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #444444;
+    background-attachment: fixed;
+    background-position: center calc(var(--scroll-y) * -0.2); /* Adjust the scroll speed */
+    background-image: url(grid.svg);
 }
 
-header {
-    position: fixed;
-    text-align: center;
-    color: aliceblue;
-    font-family: vcr;
-}
-
-.email {
-    text-align: center;
-    color: azure;
-    font-family: vcr;
-    font-weight: 600;
-    display: block;
-    font-size: xx-large;
-    scale: 1
-}
-
-.top {
-    animation-name: logorot;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-
-.cloud {
-    scale: 0.6;
-    display: absolute;
-    overflow: visible;
+.main {
+    z-index: 1;
 }
 
 .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
-    scale: 1;
-}
-
-.intro {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: auto;
-    border-top: 55%;
+    animation-name: logorot;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
-.welcome {
-    color: white;
-    font-family:vcr;
-    font-weight: bold;
-    text-align: center;
-    font-size: xx-large;
-    display: block;
+.containerbg {
+    position: relative; /* Establishes a positioning context for the background object */
+    padding: 20px;
+}
+
+.bgobject {
+    position: fixed;
     margin-left: auto;
     margin-right: auto;
-    scale: 1.6;
+    z-index: 0;
+    width: 100%;
+    margin-top: calc(var(--scroll-y2) * -0.2);
+    transition: margin-top 0.01s linear;
+    scroll-behavior: unset;
+    pointer-events: none; /* Prevents interaction with the background */
 }
 
-.text {
-    color: white;
-    font-family: vcr;
-    font-weight: bold;
-    text-align: center;
-    font-size: xx-large;
-    display: block;
+.newbadge {
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    scale: 1;
+    animation-name: badgerot;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 3;
+    margin-left: 0px;
+    margin-top: 600px;
 }
 
-.nametext {
-    font-family: vcr;
+
+@keyframes badgerot {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(0.55);
+    }
+}
+
+.icondepth {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    width: 100%;
+    margin-top: calc(var(--scroll-y2) * 1);
+    transition: margin-top 0.01s linear;
+    scroll-behavior: unset;
+    pointer-events: none; /* Prevents interaction with the background */
+}
+
+.top {
+    position: sticky;
+    text-align: center;
+    font-size: xx-large;
+    justify-items: center;
+    width: 35em;
+    background-color: gray;
+    border: 1em solid lightgray;
+    margin: auto;
+    padding: 8px;
+    margin-top: 11%;
     scale: 1.4;
+    zoom: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.product1 {
+    position: sticky;
+    text-align: center;
+    font-size: xx-large;
+    justify-items: center;
+    width: 45em;
+    background-color: rgb(0, 119, 255);
+    border: 0.9em solid rgb(72, 207, 248);
+    margin: auto;
+    padding: 15px;
+    gap: 25em;
+    margin-top: 6em;
+    align-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    zoom: normal;
+}
+
+.product2 {
+    position: sticky;
+    text-align: center;
+    font-size: xx-large;
+    justify-items: center;
+    width: 45em;
+    background-color: rgb(122, 52, 19);
+    border: 0.9em solid rgb(92, 31, 3);
+    margin: auto;
+    padding: 15px;
+    gap: 25em;
+    margin-top: 6em;
+    align-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    zoom: normal;
+}
+
+.product3 {
+    position: sticky;
+    text-align: center;
+    font-size: xx-large;
+    justify-items: center;
+    width: 45em;
+    background-image: url(MV_BG.png);
+    background-size: cover;
+    border: 0.9em solid white;
+    margin: auto;
+    padding: 15px;
+    gap: 25em;
+    margin-top: 6em;
+    align-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    zoom: normal;
+}
+
+.product4 {
+    position: sticky;
+    text-align: center;
+    font-size: xx-large;
+    justify-items: center;
+    width: 45em;
+    background-color: rgb(255, 251, 0);
+    border: 0.9em solid rgb(129, 127, 9);
+    margin: auto;
+    padding: 15px;
+    gap: 25em;
+    margin-top: 6em;
+    align-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    zoom: normal;
 }
 
 .team {
-    color: white;
-    font-family: vcr;
-    font-weight: bold;
+    position: sticky;
     text-align: center;
     font-size: xx-large;
-    display:inline-table;
-    margin-left: auto;
-    margin-right: auto;
-    scale: 1
-    
+    justify-items: center;
+    width: 45em;
+    background-color: gray;
+    border: 0.9em solid lightgray;
+    margin: auto;
+    padding: 15px;
+    gap: 25em;
+    margin-top: 6em;
+    align-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    zoom: normal;
 }
 
-.textalt {
-    color: white;
-    font-family: vcr;
-    font-weight: bold;
+.WWA {
+    position: sticky;
     text-align: center;
     font-size: xx-large;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    scale: 0.8;
+    justify-items: center;
+    width: 45em;
+    background-color: gray;
+    border: 0.9em solid lightgray;
+    margin: auto;
+    padding: 15px;
+    gap: 25em;
+    margin-top: 6em;
+    align-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    zoom: normal;
 }
 
-.textdesc {
+.standalone1 {
+    color: aliceblue;
+}
+
+.fixhr {
+    position: sticky;
+    margin-top: 18em;
+    border: 0.9em solid lightgray;
+    z-index: 1;
+}
+
+.text {
+    width: 50%;
+    margin-top: -5%;
+    margin-bottom: -25%;
+    scale: 1;
+}
+
+.fixhr2 {
+    position: sticky;
+    margin-top: 15em;
+    border: 0.9em solid lightgray;
+    z-index: 1;
+}
+
+h3 {
     color: white;
-    font-family: vcr;
-    font-weight: bold;
-    text-align: center;
-    font-size: medium;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    scale: 1;   
-    margin-bottom: 5%;
 }
 
-@font-face {
-    font-family: vcr;
-    src: url(VCR_OSD_MONO_1.001.ttf);
+.email {
+    scale: 2.1;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
+.teamimg {
+    position: sticky;
+    gap: 45px;
+    width: 100%; /* Full width of the container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    vertical-align: middle;
+    height: auto;
+    scale: 1;
+    margin-left: 0;
+}
 
-.projects {
+.teamimgs {
     display: grid;
-    grid-template-columns: 4 4;
-    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns in a single row */
+    height: 100%;
     place-items: center;
+    object-fit: fill;
 }
 
-a {
-    color: azure;
-    font-size: x-large;
+
+h2 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
 }
 
-.push {
-    border-bottom: 45%;
-}
-
-.MSTK {
-    color: rgb(59, 59, 59)
-}
-
-@keyframes logorot {
+@keyframes scroll {
     0% {
-        transform: translateY(20%);
-    }
-    50% {
-        transform: translateY(15%);
+        transform: translateX(0);
     }
     100% {
-        transform: translateY(20%);
+        transform: translateX(-50%); /* Move half of width for smooth loop */
     }
 }
 
-@keyframes carl {
+
+@keyframes logorot {
     0% {
         transform: translateY(20%);
     }

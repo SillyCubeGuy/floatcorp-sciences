@@ -1,11 +1,17 @@
 
-html {
-    background-color: rgb(153, 145, 68);
-}
-
 @font-face {
     font-family: vcr;
     src: url(VCR_OSD_MONO_1.001.ttf);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #444444;
+    background-attachment: fixed;
+    background-position: center calc(var(--scroll-y3) * -0.05); /* Adjust the scroll speed */
+    background-size: cover;
+    background-image: url(MV_BG.png);
 }
 
 .title {
@@ -15,15 +21,7 @@ html {
     text-align: center;
     font-weight: bold;
     font-size: xx-large;
-    font-family: 'vcr';
-}
-
-.shortertext {
-    width: 70%;
-}
-
-.dangerous {
-    color:red
+    font-family: vcr;
 }
 
 
